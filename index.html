@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BIM Plugin</title>
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Segoe UI,Arial,sans-serif;
+        }
+
+        body{
+            background:#f5f5f5;
+            color:#222;
+        }
+
+        header{
+            background:white;
+            height:70px;
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            padding:0 60px;
+            box-shadow:0 1px 5px rgba(0,0,0,.08);
+        }
+
+        nav a{
+            text-decoration:none;
+            color:#444;
+            margin-left:30px;
+            font-weight:500;
+        }
+
+        .hero{
+            padding:120px 30px;
+            text-align:center;
+            background:white;
+        }
+
+        .hero h1{
+            font-size:58px;
+            margin-bottom:15px;
+        }
+
+        .hero p{
+            font-size:22px;
+            color:#666;
+        }
+
+        .button{
+            display:inline-block;
+            margin-top:40px;
+            padding:16px 36px;
+            border-radius:8px;
+            background:#0078d4;
+            color:white;
+            text-decoration:none;
+            font-weight:bold;
+        }
+
+        section{
+            max-width:1300px;
+            margin:auto;
+            padding:80px 20px;
+        }
+
+        h2{
+            margin-bottom:40px;
+            text-align:center;
+            font-size:40px;
+        }
+
+        .cards{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+            gap:25px;
+        }
+
+        .card{
+            background:white;
+            border-radius:12px;
+            padding:35px;
+            box-shadow:0 3px 15px rgba(0,0,0,.08);
+        }
+
+        .card h3{
+            margin-bottom:15px;
+        }
+
+        footer{
+            padding:40px;
+            text-align:center;
+            color:#777;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<header>
+
+    <h2>BIM Plugin</h2>
+
+    <nav>
+        <a href="#">Modules</a>
+        <a href="#">Documentation</a>
+        <a href="#">Videos</a>
+        <a href="#">Contact</a>
+    </nav>
+
+</header>
+
+<div class="hero">
+
+    <h1>BIM Plugin</h1>
+
+    <p>Professional Electrical Tools for Autodesk Revit</p>
+
+    <a class="button" href="#">View on Autodesk Marketplace</a>
+
+</div>
+
+<section>
+
+    <h2>Modules</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>Electrical Modeling</h3>
+            <p>Powerful tools for conduit modeling.</p>
+        </div>
+
+        <div class="card">
+            <h3>Align Tools</h3>
+            <p>Align Revit elements in one click.</p>
+        </div>
+
+        <div class="card">
+            <h3>Import / Export</h3>
+            <p>Import Excel schedules into Revit.</p>
+        </div>
+
+        <div class="card">
+            <h3>Rename Tools</h3>
+            <p>Rename Sheets, Views and Schedules.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<footer>
+
+© 2026 BIM Plugin
+
+</footer>
+
+</body>
+</html>
