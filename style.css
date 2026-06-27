@@ -1,0 +1,339 @@
+/* =========================================
+   GENERAL
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #ffffff;
+    color: #222222;
+}
+
+/* =========================================
+   HEADER
+========================================= */
+
+.top-header {
+    height: 60px;
+    background: #d8e7fb;
+    border-bottom: 2px solid #4b86da;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 20px;
+}
+
+.brand {
+    font-size: 24px;
+    font-weight: 700;
+    color: #1565d8;
+    text-decoration: none;
+}
+
+.brand:hover {
+    text-decoration: none;
+}
+
+.title {
+    font-size: 22px;
+    font-weight: 700;
+    color: #111111;
+}
+
+.contact-link {
+    color: #1565d8;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.contact-link:hover {
+    text-decoration: underline;
+}
+
+/* =========================================
+   LAYOUT
+========================================= */
+
+.layout {
+    display: flex;
+    background: #ffffff;
+}
+
+/* =========================================
+   SIDEBAR
+========================================= */
+
+.sidebar {
+    width: 320px;
+    min-height: calc(100vh - 60px);
+
+    background: #d8e7fb;
+    border-right: 2px solid #4b86da;
+
+    padding: 15px 20px;
+}
+
+.sidebar h2 {
+    text-align: center;
+    margin-bottom: 18px;
+
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.intro-home {
+    color: #111111;
+    text-decoration: none;
+}
+
+.intro-home:hover {
+    color: #1565d8;
+}
+
+.side-nav {
+    display: flex;
+    flex-direction: column;
+}
+
+.side-nav details {
+    margin-bottom: 8px;
+}
+
+.side-nav summary {
+    list-style: none;
+
+    display: flex;
+    align-items: center;
+
+    cursor: pointer;
+    user-select: none;
+
+    margin: 8px 0;
+
+    color: #1565d8;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.side-nav summary::-webkit-details-marker {
+    display: none;
+}
+
+.side-nav summary::before {
+
+    content: "▶";
+
+    width: 16px;
+    height: 16px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    margin-right: 4px;
+
+    color: #1565d8;
+    font-size: 10px;
+
+    transform-origin: center center;
+
+    transition: transform .2s ease;
+}
+
+.side-nav details[open] summary::before {
+    transform: rotate(90deg);
+}
+
+.side-nav a {
+
+    display: block;
+
+    margin: 10px 0 10px 24px;
+
+    color: #111111;
+
+    text-decoration: none;
+
+    font-size: 17px;
+    font-weight: 600;
+
+    transition: color .2s;
+}
+
+.side-nav a:hover {
+    color: #1565d8;
+}
+
+/* =========================================
+   CONTENT
+========================================= */
+
+.content {
+    flex: 1;
+
+    padding: 35px 40px 80px;
+
+    background: #ffffff;
+}
+
+/* =========================================
+   INTRO LINKS
+========================================= */
+
+.intro-links {
+    display: flex;
+    flex-direction: column;
+
+    gap: 8px;
+
+    margin-bottom: 45px;
+}
+
+.intro-links a {
+    width: max-content;
+
+    color: #1565d8;
+    text-decoration: none;
+
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.intro-links a:hover {
+    text-decoration: underline;
+}
+
+/* =========================================
+   SECTIONS
+========================================= */
+
+.content-section {
+    max-width: 760px;
+    margin: 0 auto 70px;
+}
+
+.content-section h1 {
+    text-align: center;
+
+    margin-bottom: 30px;
+
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.content-section p {
+    margin-bottom: 12px;
+
+    font-size: 18px;
+    line-height: 1.65;
+}
+
+.content-section ul,
+.content-section ol {
+    margin-left: 25px;
+}
+
+.content-section li {
+    margin-bottom: 8px;
+
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+/* =========================================
+   SUPPORT
+========================================= */
+
+.support {
+    text-align: center;
+}
+
+.support p {
+    margin-bottom: 10px;
+}
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width:1000px) {
+
+    .layout {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        min-height: auto;
+
+        border-right: none;
+        border-bottom: 2px solid #4b86da;
+    }
+
+    .title {
+        display: none;
+    }
+
+    .content {
+        padding: 30px 20px;
+    }
+
+    .content-section {
+        max-width: 100%;
+    }
+
+}
+/* =========================================
+   ACTIVE LINK
+========================================= */
+
+.active-link {
+    color: #1565d8 !important;
+}
+
+/* =========================================
+   NOTES
+========================================= */
+
+.note {
+    margin-top: 25px;
+}
+
+/* =========================================
+   VIDEO
+========================================= */
+
+.video-section {
+    text-align: center;
+}
+
+.video-wrapper {
+    width: 800px;
+    max-width: 100%;
+
+    margin: 40px auto;
+}
+
+.video-wrapper iframe {
+    width: 100%;
+
+    aspect-ratio: 16 / 9;
+
+    border: none;
+    border-radius: 8px;
+
+    display: block;
+}
