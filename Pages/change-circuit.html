@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Circuit | BIM Plugin</title>
+
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+
+<header class="top-header">
+
+    <a href="../index.html" class="brand">
+        BIM Plugin
+    </a>
+
+    <div class="title">
+        Professional BIM Tools for Autodesk Revit
+    </div>
+
+    <a href="../index.html#support" class="contact-link">
+        Contact
+    </a>
+
+</header>
+
+<div class="layout">
+
+    <aside class="sidebar">
+
+        <h2>
+            <a href="../index.html" class="intro-home">
+                BIM Plugin - Intro
+            </a>
+        </h2>
+
+        <nav class="side-nav">
+
+            <details open>
+
+                <summary>Electrical Modeling Tools</summary>
+
+                <a href="offset.html">Offset</a>
+                <a href="kick.html">Kick</a>
+                <a href="trim-extend-90.html">Trim Extend 90</a>
+                <a href="split.html">Split</a>
+                <a href="stub-up.html">Stub Up</a>
+                <a href="stub-down.html">Stub Down</a>
+                <a href="element-spacing.html">Element Spacing</a>
+                <a href="spacing-settings.html">Spacing Setting</a>
+                <a href="select-run.html">Select Run</a>
+
+            </details>
+
+            <details open>
+
+                <summary>Parameters Tools</summary>
+
+                <a href="fill-in-copy.html">Fill In Copy</a>
+                <a href="fill-in-paste.html">Fill In Paste</a>
+                <a href="fill-in.html">Fill In</a>
+                <a href="fill-in-settings.html">Fill In Settings</a>
+
+            </details>
+
+            <details open>
+
+                <summary>Calculations</summary>
+
+                <a href="run-length.html">Run Length</a>
+                <a href="360-rule.html">360 Rule</a>
+
+            </details>
+
+            <details open>
+
+                <summary>Align Tools</summary>
+
+                <a href="align-left.html">Align Left</a>
+                <a href="align-center.html">Align Center</a>
+                <a href="align-right.html">Align Right</a>
+                <a href="align-top.html">Align Top</a>
+                <a href="align-middle.html">Align Middle</a>
+                <a href="align-bottom.html">Align Bottom</a>
+                <a href="align-settings.html">Align Settings</a>
+
+            </details>
+
+            <details open>
+
+                <summary>3D Tools</summary>
+
+                <a href="3d-section-box.html">3D Section Box</a>
+                <a href="3d-distance.html">3D Distance</a>
+
+            </details>
+
+            <details open>
+
+                <summary>Circuit Tools</summary>
+
+                <a href="create-circuit.html">Create Circuit</a>
+                <a href="change-circuit.html" class="active-link">Change Circuit</a>
+                <a href="delete-circuit.html">Delete Circuit</a>
+                <a href="check-circuit.html">Check Circuit</a>
+
+            </details>
+
+            <details open>
+
+                <summary>Annotation Tools</summary>
+
+                <a href="pick-model-elements.html">Pick Model Elements</a>
+                <a href="pick-detail-elements.html">Pick Detail Elements</a>
+                <a href="view-range.html">View Range</a>
+                <a href="view-filters-copy.html">View Filters Copy</a>
+                <a href="select-title-blocks.html">Select Title Blocks</a>
+                <a href="who-did-that.html">Who Did That?</a>
+                <a href="id-link-element.html">ID Link Element</a>
+
+            </details>
+
+            <details open>
+
+                <summary>Grid Tools</summary>
+
+                <a href="grid-bubbles.html">Grid Bubbles</a>
+                <a href="2d-grids.html">2D Grids</a>
+
+            </details>
+
+            <details open>
+
+                <summary>Rename Tools</summary>
+
+                <a href="renumber-sheets.html">Renumber Sheets</a>
+                <a href="rename-sheets.html">Rename Sheets</a>
+                <a href="rename-views.html">Rename Views</a>
+                <a href="rename-schedules.html">Rename Schedules</a>
+
+            </details>
+
+            <details open>
+
+                <summary>Filter Tools</summary>
+
+                <a href="filter-plus.html">Filter Plus</a>
+                <a href="filter-by-parameter.html">Filter By Parameter</a>
+
+            </details>
+
+            <details open>
+
+                <summary>Export/Import Tools</summary>
+
+                <a href="copy-schedule-to-clipboard.html">Copy Schedule To Clipboard</a>
+                <a href="import-excel.html">Import Excel</a>
+                <a href="printing.html">Printing</a>
+
+            </details>
+
+            <details open>
+
+                <summary>Lock</summary>
+
+                <a href="licence.html">Licence</a>
+                <a href="lock.html">Lock</a>
+
+            </details>
+
+        </nav>
+
+    </aside>
+
+    <main class="content">
+
+        <section class="content-section">
+            <h1>What is Change Circuit?</h1>
+            <p><strong>Change Circuit</strong> is a tool that allows users to modify the parameters of existing electrical circuits and their connected devices in Autodesk Revit.</p>
+            <p>It provides a convenient interface for updating electrical loads, circuit information, load classifications, and electrical panel assignments without manually editing each element in the Properties palette.</p>
+        </section>
+
+        <section class="content-section">
+            <h1>How to Use Change Circuit?</h1>
+            <ol>
+                <li>
+                    <p><strong>Select Connected Electrical Elements</strong></p>
+            <p>Select one or multiple devices that are already connected to electrical power circuits.</p>
+                </li>
+                <li>
+                    <p><strong>Open Change Circuit</strong></p>
+            <p>Navigate to <strong>BIM Electrical → Circuit Tools → Change Circuit</strong>.</p>
+                </li>
+                <li>
+                    <p><strong>Review Existing Parameters</strong></p>
+            <p>The tool displays the current parameter values of the selected devices and circuits. If different values are detected, the corresponding field displays <strong><code>&lt;varies&gt;</code></strong>.</p>
+                </li>
+                <li>
+                    <p><strong>Modify the Required Parameters</strong></p>
+            <p>Update any of the following:</p>
+                    <ul>
+                        <li>Electrical Panel</li>
+                        <li>O_Apparent Load (VA)</li>
+                        <li>O_Power Factor (0–1)</li>
+                        <li>Load Classification</li>
+                        <li>Load Name</li>
+                        <li>Rating (A)</li>
+                        <li>Circuit Project Parameter and Value</li>
+                    </ul>
+                </li>
+                <li>
+                    <p><strong>Leave Unchanged Parameters as They Are</strong></p>
+            <p>Only parameters that you modify will be updated. Other values remain unchanged.</p>
+                </li>
+                <li>
+                    <p><strong>Apply Changes</strong></p>
+            <p>Click <strong>Change Circuit</strong> to apply the updated values to the selected devices and their associated circuits.</p>
+                </li>
+            </ol>
+            <h2>Result</h2>
+            <p>The specified electrical parameters are updated without recreating the existing circuits.</p>
+            <p class="note"><strong>Note:</strong> Circuit-level changes affect all devices connected to the same circuit. Electrical panel reassignment may be restricted when a circuit contains devices that were not selected.</p>
+        </section>
+
+    </main>
+
+</div>
+
+</body>
+</html>
